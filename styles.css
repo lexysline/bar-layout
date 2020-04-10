@@ -1,0 +1,31 @@
+
+.wrapper {
+    display: grid;
+}
+
+.header{
+    background: red;
+    height: 100vh;
+}
+
+section {
+ height: 100vh;
+}
+
+.timetable {
+    background: green;
+}
+
+.parallax {
+    background: blue;
+}
+
+.map {
+  
+    background: yellow;
+}
+
+.footer {
+    background: orange;
+    height: 100vh;
+}
