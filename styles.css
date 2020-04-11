@@ -157,13 +157,20 @@ section {
 
 .timetable_img {
     background: url(./img/bar.jpg);
+    background-size: cover;
 }
 
 
 /* End Timetable styles */
 
 .parallax {
-    background: blue;
+    height: 80vh;
+    background: url(./img/parallax.jpg) fixed center no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    background: black;
 }
 
 .map {
