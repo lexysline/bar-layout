@@ -1,27 +1,172 @@
+/* fonts Start */
+
+@font-face {
+    font-family: "Cormorant";
+    src: url(./fonts/Cormorant.ttf)
+}
+
+@font-face {
+    font-family: "Amiri";
+    src: url(./fonts/Amiri.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat.ttf);
+}
+
+
+/* fonts End */
 
 .wrapper {
     display: grid;
 }
 
-.header{
+.header {
     background: red;
     height: 100vh;
 }
 
 section {
- height: 100vh;
+    height: 100vh;
 }
 
+
+/* Start Timetable styles */
+
 .timetable {
-    background: green;
+    background: black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
+
+.timetable_wrapper {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    row-gap: 10vh;
+    width: 80vw;
+    height: 80vh;
+}
+
+.reservation_form {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr) 1fr;
+    grid-auto-rows: 7vh;
+    column-gap: 1vw;
+    background: black;
+}
+
+.reservation_form div {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    color: white;
+    border: 1px solid #828282;
+    padding-left: 5%;
+}
+
+.reservation_form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+#persons_selection,
+#time_selection,
+#date_selection {
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    padding-left: 5%;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: Montserrat;
+    border: none;
+    height: 100%;
+}
+
+#reservation_btn {
+    text-align: center;
+    background: transparent;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+#reservation_btn:hover {
+    background: white;
+    color: #828282;
+}
+
+.timetable_context {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 3vw;
+    color: white;
+}
+
+.open_hours,
+.happy_hours {
+    text-align: center;
+    display: grid;
+    align-self: center;
+}
+
+.happy_hours>h5,
+.open_hours>h5 {
+    font-size: 21px;
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+}
+
+.happy_hours>h4,
+.open_hours>h4 {
+    font-size: 50px;
+    font-family: "Amiri";
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+.happy_hours>p,
+.open_hours>p {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.happy_hours>h6,
+.open_hours>h6 {
+    font-size: 17px;
+    font-family: "Amiri";
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.happy_hours>h6:hover,
+.open_hours>h6:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.timetable_img {
+    background: url(./img/bar.jpg);
+}
+
+
+/* End Timetable styles */
 
 .parallax {
     background: blue;
 }
 
 .map {
-  
     background: yellow;
 }
 

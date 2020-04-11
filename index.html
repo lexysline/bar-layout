@@ -1,22 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar Layout</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f70b93e4f1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- https://bridge269.qodeinteractive.com -->
-    
-        <div class="wrapper">
-            <header class="header"></header>
-            <section class="timetable"></section>
-            <section class="parallax"></section>
-            <section class="menu"></section>
-            <section class="map"></section>
-            <footer class="footer"></footer>
-        </div>
+
+    <div class="wrapper">
+        <header class="header"></header>
+        <section class="timetable">
+            <div class="timetable_wrapper">
+                <form class="reservation_form">
+                    <div>
+                        <i class="fas fa-user-plus"></i>
+                        <select id="persons_selection">
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8 People</option>
+                                <option value="9">9 People</option>
+                                <option value="10">10 People</option>
+                            </select>
+                    </div>
+                    <div>
+                        <i class="far fa-calendar-alt"></i>
+                        <input id="date_selection" type="date" min="2020-04-01" value="2020-04-01" required>
+                    </div>
+                    <div>
+                        <i class="far fa-clock"></i>
+                        <select id="time_selection">
+                                <option value="6.30">6:30am</option>
+                                <option value="7">7:00am</option>
+                                <option value="7.30">7:30am</option>
+                                <option value="8">8:00am</option>
+                                <option value="8.30">8:30am</option>
+                                <option value="9">9:00am</option>
+                                <option value="9.30">9:30am</option>
+                                <option value="10">10:00am</option>
+                                <option value="10.30">10:30am</option>
+                                <option value="11">11:00am</option>
+                                <option value="11.30">11:30am</option>
+                                <option value="12">12:00am</option>
+                                <option value="12.30">12:30am</option>
+                                <option value="1">1:00pm</option>
+                                <option value="1.30">1:30pm</option>
+                                <option value="2">2:00pm</option>
+                                <option value="2.30">2:30pm</option>
+                                <option value="3">3:00pm</option>
+                                <option value="3.30">3:30pm</option>
+                                <option value="4">4:00pm</option>
+                                <option value="4.30">4:30pm</option>
+                                <option value="5">5:00pm</option>
+                                <option value="5.30">5:30pm</option>
+                                <option value="6">6:00pm</option>
+                                <option value="6.30">6:30pm</option>
+                                <option value="7">7:00pm</option>
+                                <option value="7.30">7:30pm</option>
+                                <option value="8">8:00pm</option>
+                                <option value="8.30">8:30pm</option>
+                                <option value="9">9:00pm</option>
+                                <option value="9.30">9:30pm</option>
+                                <option value="10">10:00pm</option>
+                                <option value="10.30">10:30pm</option>
+                                <option value="11">11:00pm</option>
+                            </select>
+                    </div>
+                    <button id="reservation_btn">Book a Table</button>
+                </form>
+                <div class="timetable_context">
+                    <div class="open_hours">
+                        <h5>Visit a bar</h5>
+                        <h4>Open hours</h4>
+                        <p>Monday – Friday:</br>
+                            4:00 pm – 1:00 am</p>
+                        <p>Saturday :</br>
+                            4:00 pm – 3:00 am</p>
+                        <p>Sunday:</br>
+                            4:00 pm – 2:00 am</p>
+                        <h6>Visit Us</h6>
+                    </div>
+                    <div class="timetable_img"> </div>
+                    <div class="happy_hours">
+                        <h5>The best offer</h5>
+                        <h4>Happy hour</h4>
+                        <p>Monday – Sunday:</br>
+                            4:00 pm – 7:00 pm</p>
+                        <p>20% off all wine by the glass</br>
+                            15% off all cocktails</p>
+                        <p>25% off selected craft beer</br>
+                            10% off all spirits</p>
+                        <h6>View more</h6>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="parallax"></section>
+        <section class="menu"></section>
+        <section class="map"></section>
+        <footer class="footer"></footer>
+    </div>
 
 </body>
+
 </html>
