@@ -1,3 +1,4 @@
+
 /* fonts Start */
 
 @font-face {
@@ -87,7 +88,7 @@ section {
     height: 100%;
 }
 
-#reservation_btn {
+#btn {
     text-align: center;
     background: transparent;
     color: white;
@@ -95,7 +96,7 @@ section {
     font-size: 14px;
 }
 
-#reservation_btn:hover {
+#btn:hover {
     background: white;
     color: #828282;
 }
@@ -163,15 +164,121 @@ section {
 
 /* End Timetable styles */
 
+/* Start Parallax styles */
+
 .parallax {
     height: 80vh;
-    background: url(./img/parallax.jpg) fixed center no-repeat;
+    background: url(./img/parallax2.jpg) fixed center no-repeat;
     background-size: cover;
 }
 
+/* End Parallax styles */
+
+/* Start Menu styles */
+
 .menu {
+    height: fit-content;
+    padding: 5%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
     background: black;
+    color: white;
 }
+
+.menu_wrapper{
+   display: grid;
+   row-gap: 10vh;
+    width: 80vw;
+
+}
+
+.menu_header {
+    display: grid;
+    justify-items: center;
+}
+
+.menu_header * {
+    margin: 0;
+}
+
+.menu_header h5 {
+font-family: 'Cormorant', sans-serif;
+font-size: 21px;
+font-style: italic;
+font-weight: 400;
+}
+
+.menu_header h2 {
+font-family: 'Amiri', sans-serif;
+font-size: 58px;
+font-weight: 400;
+}
+
+.menu_header p {
+    width: 50%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.menu_contentContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 5%;
+}
+.menu_content {
+display: grid;
+row-gap: 5vh;
+
+}
+
+
+
+.cocktail {
+    display: grid;
+    row-gap: 2vh;
+   
+}
+
+.cocktail>div {
+    display: grid;
+    grid-template-columns: auto 9fr 1fr;
+}
+
+.cocktail h4, .cocktail h5 {
+    font-family: "Amiri",sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.cocktail p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.cocktail * {
+display: grid;
+align-content: end;
+margin: 0;
+}
+
+.menu_content .dots {
+    border-bottom: 1px dotted;
+}
+
+.menu_content #btn {
+    height: 50px;
+    justify-self: center;
+}
+
+.menu_img {
+    background: url(./img/cocktail.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/* End Menu styles */
 
 .map {
     background: yellow;
